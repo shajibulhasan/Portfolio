@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shajibul Hasan Soaib | Portfolio</title>
+    <title>Shajibul Hasan Soaib · Gradient Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-code"></i> Shajibul Hasan Soaib</a>
+            <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> Shajibul Hasan Soaib</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,19 +31,19 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Animated Gradient -->
     <section id="home" class="hero">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 hero-content">
                     <h1>Hi, I'm a <span id="rotating-title" class="rotating-title">Full Stack Developer</span></h1>
-                    <p class="subtitle">Building Modern Web Applications</p>
-                    <p>I create responsive, user-friendly websites and powerful backend systems using the latest technologies.</p>
-                    <a href="#contact" class="btn-primary-custom">Get In Touch</a>
-                    <a href="asset/CV.pdf" class="btn-primary-custom" download>Download CV</a>
+                    <p class="subtitle fs-3 mb-4">Building Modern Web Applications</p>
+                    <p class="fs-5 mb-4">I create responsive, user-friendly websites and powerful backend systems using the latest technologies.</p>
+                    <a href="#contact" class="btn-gradient">Get In Touch</a>
+                    <a href="asset/CV.pdf" class="btn-gradient ms-3">Download Resume</a>
                 </div>
-                <div class="col-lg-5 text-center hero-image-col">
-                    <img src="asset/soaib.jpeg" alt="Shajibul Hasan Soaib" class="hero-photo img-fluid rounded-circle shadow">
+                <div class="col-lg-5 text-center">
+                    <img src="asset/soaib.jpeg" alt="Shajibul Hasan Soaib" class="hero-photo img-fluid">
                 </div>
             </div>
         </div>
@@ -55,36 +58,36 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-2">Shajibul Hasan Soaib</h3>
-                    <p class="text-muted mb-3">Full Stack Developer — Laravel & React</p>
+                <div class="col-lg-6 fade-up">
+                    <h3 class="display-5 fw-bold mb-3">Shajibul Hasan Soaib</h3>
+                    <p class="text-primary fs-4 mb-3">Full Stack Developer — Laravel & React</p>
                     <p class="lead">I'm passionate about building elegant, efficient, and scalable web applications. I focus on responsive design, clean code, and delivering great user experiences.</p>
-                    <p>I enjoy solving complex problems and working end-to-end from UI to backend.</p>
+                    <p class="fs-5">I enjoy solving complex problems and working end-to-end from UI to backend.</p>
                 </div>
                 <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
+                    <div class="row g-4">
+                        <div class="col-md-6 fade-up">
                             <div class="skill-card">
                                 <i class="fas fa-laptop-code skill-icon"></i>
                                 <h4>Clean Code</h4>
                                 <p>Writing maintainable and scalable code</p>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 fade-up">
                             <div class="skill-card">
                                 <i class="fas fa-mobile-alt skill-icon"></i>
                                 <h4>Responsive</h4>
                                 <p>Mobile-first design approach</p>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 fade-up">
                             <div class="skill-card">
                                 <i class="fas fa-rocket skill-icon"></i>
                                 <h4>Performance</h4>
                                 <p>Optimized for speed</p>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 fade-up">
                             <div class="skill-card">
                                 <i class="fas fa-database skill-icon"></i>
                                 <h4>Database Design</h4>
@@ -103,65 +106,33 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
                     <h2 class="section-title">My Skills</h2>
-                    <p class="mt-3">Technologies I work with</p>
+                    <p class="text-white fs-5">Technologies I work with</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-html5 skill-icon"></i>
-                        <h4>HTML5</h4>
-                        <p>Semantic markup</p>
-                    </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-html5 skill-icon"></i><h4>HTML5</h4><p>Semantic markup</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt skill-icon"></i>
-                        <h4>CSS3</h4>
-                        <p>Modern styling</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i><h4>CSS3</h4><p>Modern styling</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-bootstrap skill-icon"></i>
-                        <h4>Bootstrap</h4>
-                        <p>Responsive framework</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-bootstrap skill-icon"></i><h4>Bootstrap</h4><p>Responsive framework</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-js skill-icon"></i>
-                        <h4>JavaScript</h4>
-                        <p>Interactive functionality</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-js skill-icon"></i><h4>JavaScript</h4><p>Interactive functionality</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-react skill-icon"></i>
-                        <h4>ReactJS</h4>
-                        <p>Component-based UI</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-react skill-icon"></i><h4>ReactJS</h4><p>Component-based UI</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-laravel skill-icon"></i>
-                        <h4>Laravel</h4>
-                        <p>PHP framework</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-laravel skill-icon"></i><h4>Laravel</h4><p>PHP framework</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fas fa-database skill-icon"></i>
-                        <h4>MySQL</h4>
-                        <p>Database management</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fas fa-database skill-icon"></i><h4>MySQL</h4><p>Database management</p></div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="skill-card">
-                        <i class="fab fa-git-alt skill-icon"></i>
-                        <h4>Git</h4>
-                        <p>Version control</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
+                    <div class="skill-card"><i class="fab fa-git-alt skill-icon"></i><h4>Git</h4><p>Version control</p></div>
                 </div>
             </div>
         </div>
@@ -173,55 +144,37 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
                     <h2 class="section-title">My Projects</h2>
-                    <p class="mt-3">Recent work and case studies</p>
+                    <p class="text-white fs-5">Recent work and case studies</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-up">
                     <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
+                        <div class="project-image"><i class="fas fa-shopping-cart"></i></div>
                         <div class="project-content">
                             <h4>E-Commerce Platform</h4>
                             <p>A full-featured online shopping platform with payment integration and admin dashboard.</p>
-                            <div class="project-tags">
-                                <span class="tag">Laravel</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Bootstrap</span>
-                            </div>
+                            <div><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fade-up">
                     <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-tasks"></i>
-                        </div>
+                        <div class="project-image"><i class="fas fa-tasks"></i></div>
                         <div class="project-content">
                             <h4>Task Management App</h4>
                             <p>A React-based task manager with real-time updates and collaborative features.</p>
-                            <div class="project-tags">
-                                <span class="tag">ReactJS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">CSS</span>
-                            </div>
+                            <div><span class="tag">ReactJS</span><span class="tag">JavaScript</span><span class="tag">CSS</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fade-up">
                     <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-blog"></i>
-                        </div>
+                        <div class="project-image"><i class="fas fa-blog"></i></div>
                         <div class="project-content">
                             <h4>Blog CMS</h4>
                             <p>Content management system with rich text editor and SEO optimization features.</p>
-                            <div class="project-tags">
-                                <span class="tag">Laravel</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
+                            <div><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +188,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
                     <h2 class="section-title">Get In Touch</h2>
-                    <p class="mt-3">Let's work together on your next project</p>
+                    <p class="text-white fs-5">Let's work together on your next project</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -243,40 +196,18 @@
                     <div class="contact-card">
                         <form id="contactForm">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
+                                <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email" required></div>
                             </div>
                             <input type="text" class="form-control" placeholder="Subject" required>
                             <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                            <div class="text-center">
-                                <button type="submit" class="btn-submit">Send Message</button>
-                            </div>
+                            <div class="text-center"><button type="submit" class="btn-submit">Send Message</button></div>
                         </form>
-                        <!-- Contact Information -->
-                        <div class="contact-info">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="contact-item">
-                                        <i class="fas fa-envelope"></i>
-                                        <span>shajibul_400166@bscse.puc.ac.bd</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="contact-item">
-                                        <i class="fas fa-phone"></i>
-                                        <span>01571-171044</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="contact-item">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span>Chattogram, Bangladesh</span>
-                                    </div>
-                                </div>
+                        <div class="contact-info mt-5">
+                            <div class="row justify-content-center g-3">
+                                <div class="col-md-6"><div class="contact-item"><i class="fas fa-envelope"></i> shajibulhasan25@gmail.com</div></div>
+                                <div class="col-md-6"><div class="contact-item"><i class="fas fa-phone"></i> 01571-171044</div></div>
+                                <div class="col-md-6"><div class="contact-item"><i class="fas fa-map-marker-alt"></i> Chattogram, Bangladesh</div></div>
                             </div>
                         </div>
                     </div>
@@ -289,14 +220,15 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/shajibulhasan"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/shajibulhasansoaib/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/Shajibul.Official.Account/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/shajibul.official.account/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/shajibulhasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shajibulhasansoaib/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/Shajibul.Official.Account/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/shajibul.official.account/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <p>&copy; 2026 Shajibul Hasan Soaib. All rights reserved.</p>
+            <p class="mt-4">&copy; 2026 Shajibul Hasan Soaib. All rights reserved.</p>
         </div>
     </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
