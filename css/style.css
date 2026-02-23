@@ -151,7 +151,7 @@
         .hero-photo {
             width: 380px;
             height: 380px;
-            object-fit: cover;
+            /* object-fit: cover; */
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 30px 50px -10px rgba(0,0,0,0.5);
