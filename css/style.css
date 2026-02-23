@@ -394,6 +394,12 @@
             margin-right: 8px;
             margin-bottom: 8px;
         }
+        .tag:hover {
+                   background: linear-gradient(135deg, #f093fb, #f5576c);
+                   color: white;
+               }
+
+
 
         /* === Contact section with gradient form === */
         .contact {
