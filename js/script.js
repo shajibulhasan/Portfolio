@@ -70,3 +70,31 @@
                 });
             });
     })();
+
+    // Animate education progress when visible
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const value = bar.getAttribute('data-progress');
+                const text = bar.parentElement.nextElementSibling;
+
+                bar.style.width = value + '%';
+
+                // animate number
+                let count = 0;
+                const interval = setInterval(() => {
+                    if (count >= value) {
+                        clearInterval(interval);
+                    } else {
+                        count++;
+                        text.textContent = count + '%';
+                    }
+                }, 20);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    progressBars.forEach(bar => observer.observe(bar));
