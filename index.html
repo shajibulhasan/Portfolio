@@ -1,331 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shajibul Hasan Soaib · Gradient Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shajibul Hasan Soaib — Full Stack Developer</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
 
-    <link rel="stylesheet" href="css/style.css">
-
+</style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> SHS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+
+<nav>
+  <div class="navbar">
+    <div class="logo"><span class="dot"></span>shajibul.dev</div>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="#about"><span class="idx">01</span>about</a>
+      <a href="#skills"><span class="idx">02</span>skills</a>
+      <a href="#experience"><span class="idx">03</span>experience</a>
+      <a href="#projects"><span class="idx">04</span>projects</a>
+      <a href="#contact"><span class="idx">05</span>contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="editor-window">
+      <div class="editor-titlebar">
+        <span class="tlb-dot r"></span><span class="tlb-dot y"></span><span class="tlb-dot g"></span>
+        <span class="editor-filename">soaib.profile.js</span>
+      </div>
+      <div class="editor-body">
+        <div class="gutter"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div></div>
+        <div class="code">
+          <div class="ln"><span class="tok-kw">const</span> <span class="tok-var">developer</span> <span class="tok-punc">=</span> {</div>
+          <div class="ln">&nbsp;&nbsp;name: <span class="tok-str">"Shajibul Hasan Soaib"</span>,</div>
+          <div class="ln">&nbsp;&nbsp;role: <span class="tok-str">"Full Stack Developer"</span>,</div>
+          <div class="ln">&nbsp;&nbsp;stack: [<span class="tok-str">"React"</span>, <span class="tok-str">"Laravel"</span>, <span class="tok-str">"Flutter"</span>],</div>
+          <div class="ln">&nbsp;&nbsp;based: <span class="tok-str">"Chattogram, BD"</span>,</div>
+          <div class="ln">&nbsp;&nbsp;status: <span class="tok-fn">build</span>(<span class="tok-str">"things that ship"</span>)<span class="cursor-blink"></span></div>
+          <div class="ln">};</div>
+          <div class="ln"><span class="tok-com">// IT Engineer & Software Developer @ Millennium Solution</span></div>
         </div>
-    </nav>
+      </div>
+    </div>
 
-    <!-- Hero Section with Animated Gradient -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 hero-content">
-                    <h1>Hi, I'm a <span id="rotating-title" class="rotating-title">Full Stack Developer</span></h1>
-                    <p class="subtitle fs-3 mb-4">Building Modern Web Applications</p>
-                    <p class="fs-5 mb-4">I create responsive, user-friendly websites and powerful backend systems using the latest technologies.</p>
-                    <a href="#contact" class="btn-gradient me-3 mt-2">Get In Touch</a>
-                    <a href="asset/CV.pdf" class="btn-gradient mt-2">Download Resume</a>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="asset/soaib1.jpeg" alt="Shajibul Hasan Soaib" class="hero-photo img-fluid mt-5 mt-lg-0 fade-up">
-                </div>
-            </div>
+    <div class="hero-meta">
+      <div class="pill"><span class="lbl">location:</span> Chattogram, Bangladesh</div>
+      <div class="pill"><span class="lbl">role:</span> IT Engineer & Software Developer</div>
+      <div class="pill"><span class="lbl">focus:</span> React · Laravel · Flutter</div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#projects">View Projects →</a>
+      <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-tag">01</span><span class="sec-title">about<span class="punc">.md</span></span></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a Full Stack Developer based in Chattogram, Bangladesh, building responsive web applications with React.js, cross-platform mobile apps with Flutter, and scalable backend systems with Laravel.</p>
+        <p>My day-to-day involves designing REST APIs, managing relational databases, and shipping interfaces that hold up under real client use — from e-commerce platforms to internal admin tools. I care about clean architecture as much as a polished UI, because the two are rarely separable in practice.</p>
+        <p>Currently working at Millennium Solution as an IT Engineer & Software Developer, where I build custom software for clients and support TallyPrime deployments end to end.</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-row"><span class="k">degree</span><span class="v">B.Sc. CSE</span></div>
+        <div class="stat-row"><span class="k">university</span><span class="v">Premier University</span></div>
+        <div class="stat-row"><span class="k">languages</span><span class="v">Bengali, English</span></div>
+        <div class="stat-row"><span class="k">phone</span><span class="v">01571-171044</span></div>
+        <div class="stat-row"><span class="k">email</span><span class="v">shajibulhasan.ms@gmail.com</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-tag">02</span><span class="sec-title">skills<span class="punc">.json</span></span></div>
+    <div class="skill-groups">
+      <div class="skill-card reveal">
+        <h3>Frontend</h3>
+        <div class="tag-list">
+          <span class="tag">Flutter</span><span class="tag">React.js</span><span class="tag">JavaScript (ES6+)</span>
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap 5</span>
+          <span class="tag">Axios</span><span class="tag">React Router</span>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">About Me</h2>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 fade-up">
-                    <h3 class="display-5 fw-bold mb-3">Shajibul Hasan Soaib</h3>
-                    <p class="text-primary fs-4 mb-3">Full Stack Developer — Laravel & React</p>
-                    <p class="lead">I'm passionate about building elegant, efficient, and scalable web applications. I focus on responsive design, clean code, and delivering great user experiences.</p>
-                    <p class="fs-5">I enjoy solving complex problems and working end-to-end from UI to backend.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-md-6 fade-up">
-                            <div class="skill-card">
-                                <i class="fas fa-laptop-code skill-icon"></i>
-                                <h4>Clean Code</h4>
-                                <p>Writing maintainable and scalable code</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fade-up">
-                            <div class="skill-card">
-                                <i class="fas fa-mobile-alt skill-icon"></i>
-                                <h4>Responsive</h4>
-                                <p>Mobile-first design approach</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fade-up">
-                            <div class="skill-card">
-                                <i class="fas fa-rocket skill-icon"></i>
-                                <h4>Performance</h4>
-                                <p>Optimized for speed</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fade-up">
-                            <div class="skill-card">
-                                <i class="fas fa-database skill-icon"></i>
-                                <h4>Database Design</h4>
-                                <p>Efficient data management</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Backend</h3>
+        <div class="tag-list">
+          <span class="tag">PHP (OOP)</span><span class="tag">Laravel</span><span class="tag">MVC Architecture</span>
+          <span class="tag">RESTful APIs</span><span class="tag">JWT / Sanctum Auth</span>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">My Education</h2>
-                <p class="text-muted fs-5">Academic journey</p>
-            </div>
-
-            <div class="timeline">
-
-                <!-- BSc -->
-                <div class="timeline-item fade-up">
-                    <div class="timeline-dot"></div>
-
-                    <div class="education-card glass">
-                        <h4><i class="fas fa-graduation-cap"></i> BSc in Computer Science & Engineering</h4>
-                        <p class="text-muted">Premier University, Chittagong | 2021 - 2025</p>
-
-                        <p>
-                            Focused on software engineering, web development, and problem solving. 
-                            Built multiple real-world projects including full-stack web applications using Laravel and React.
-                        </p>
-
-                        <div class="progress-wrapper">
-                            <div class="progress">
-                                <div class="progress-bar" data-progress="100"></div>
-                            </div>
-                            <span class="progress-text">0%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MSc -->
-                <div class="timeline-item fade-up">
-                    <div class="timeline-dot"></div>
-
-                    <div class="education-card glass">
-                        <h4><i class="fas fa-user-graduate"></i> MSc in Computer Science & Engineering</h4>
-                        <p class="text-muted">Planned / Future Goal</p>
-
-                        <p>
-                            Aiming to deepen knowledge in advanced computing, artificial intelligence, 
-                            and scalable system design. Focus will be on research and high-performance applications.
-                        </p>
-
-                        <div class="progress-wrapper">
-                            <div class="progress">
-                                <div class="progress-bar" data-progress="20"></div>
-                            </div>
-                            <span class="progress-text">0%</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Database & Deployment</h3>
+        <div class="tag-list">
+          <span class="tag">MySQL</span><span class="tag">Firebase</span><span class="tag">Query Optimization</span>
+          <span class="tag">DB Migrations</span><span class="tag">cPanel Hosting</span><span class="tag">Shared Hosting</span><span class="tag">Env Setup</span>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">My Skills</h2>
-                    <p class="text-white fs-5">Technologies I work with</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-html5 skill-icon"></i><h4>HTML5</h4><p>Semantic markup</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i><h4>CSS3</h4><p>Modern styling</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-bootstrap skill-icon"></i><h4>Bootstrap</h4><p>Responsive framework</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-js skill-icon"></i><h4>JavaScript</h4><p>Interactive functionality</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-react skill-icon"></i><h4>ReactJS</h4><p>Component-based UI</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-laravel skill-icon"></i><h4>Laravel</h4><p>PHP framework</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fas fa-database skill-icon"></i><h4>MySQL</h4><p>Database management</p></div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 fade-up">
-                    <div class="skill-card"><i class="fab fa-git-alt skill-icon"></i><h4>Git</h4><p>Version control</p></div>
-                </div>
-            </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Tools & Concepts</h3>
+        <div class="tag-list">
+          <span class="tag">Git / GitHub</span><span class="tag">Postman</span><span class="tag">Composer</span>
+          <span class="tag">NPM / Vite</span><span class="tag">SOLID Principles</span><span class="tag">Clean Code</span><span class="tag">Web Security Basics</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center my-2">
-                    <h2 class="section-title">My Experience</h2>
-                    <p class="text-black fs-5">Professional journey and achievements</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 fade-up">
-                    <div class="experience-card">
-                        <h4>IT Engineer</h4>
-                        <p class="text-muted">Millennium Solution. | January, 2025 - Present</p>
-                        <ul>
-                            <li>Provided technical support and training to clients on TallyPrime software.</li>
-                            <li>Assisted in software installation, configuration, and troubleshooting.</li>
-                            <li>Collaborated with the development team to identify and resolve software issues.</li>
-                            <li>Provided remote and on-site troubleshooting for software-related issues.</li>
-                            <li>Assisted in data migration, backup, and restoration processes.</li>
-                            <li>Maintained documentation of support activities and solutions provided.</li>
-                            <li>Contributed to improving customer satisfaction by providing timely and effective support.</li>
-                            <li>Participated in team meetings and contributed to process improvement initiatives.</li>
-                        </ul>
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-tag">03</span><span class="sec-title">experience<span class="punc">.log</span></span></div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-role">IT Engineer & Software Developer · <span class="tl-org">Millennium Solution</span></div>
+        <div class="tl-date">January 2025 — Present</div>
+        <ul class="tl-desc">
+          <li>Develop custom websites and software solutions based on client requirements as a Software Developer and Technical Support Engineer.</li>
+          <li>Provide technical support and training on TallyPrime: installation, configuration, troubleshooting, data migration, backup, and restoration.</li>
+          <li>Collaborate with the development team to resolve software issues and contribute to process improvements, delivering both remote and on-site support.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-role">Developer · <span class="tl-org">Premier University Computer Club</span></div>
+        <div class="tl-date">July 2024 — December 2024</div>
+        <ul class="tl-desc">
+          <li>Contributed to the development and maintenance of club-related web applications and digital platforms over a 6-month period.</li>
+          <li>Implemented new features and improved UI/UX, ensuring responsive design across devices.</li>
+          <li>Collaborated with team members to manage projects efficiently and support technical requirements for club activities and events.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    </div>
-                </div>
-                
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-tag">04</span><span class="sec-title">projects<span class="punc">/</span></span></div>
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1A2433"/>
+                <stop offset="100%" stop-color="#0B0F14"/>
+              </linearGradient>
+              <pattern id="grid1" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" fill="none" stroke="#222C3B" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="200" fill="url(#g1)"/>
+            <rect width="400" height="200" fill="url(#grid1)"/>
+            <circle cx="80" cy="60" r="34" fill="#5EEAD4" opacity="0.15"/>
+            <circle cx="340" cy="150" r="50" fill="#F5A623" opacity="0.10"/>
+            <g transform="translate(140,70)" font-family="JetBrains Mono, monospace" font-size="13" fill="#5EEAD4">
+              <text x="0" y="0">&lt;ShopCart /&gt;</text>
+              <text x="0" y="22" fill="#8A97A8">products.map(p =&gt;</text>
+              <text x="14" y="44" fill="#F5A623">&lt;ProductCard /&gt;</text>
+              <text x="0" y="66" fill="#8A97A8">)</text>
+            </g>
+          </svg>
+          <span class="thumb-label">image placeholder — replace with screenshot</span>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">My Projects</h2>
-                    <p class="text-white fs-5">Recent work and case studies</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 fade-up">
-                    <div class="project-card">
-                        <div class="project-image"><img width="100%" height="100%" src="asset/online.png" alt=""></div>
-                        <div class="project-content">
-                            <h4>Online Traffic Offenses Management System</h4>
-                            <p>A web-based system for managing traffic violations, including reporting, tracking, and resolution processes.</p>
-                            <div><span class="tag">Laravel</span><span class="tag">Laravel Blade</span><span class="tag">MySQL</span></div>
-                            <div>
-                                <a href="https://otoms.com.logicthree.com/" target="_blank" class="btn btn-outline-light tag"> Live Demo </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-up">
-                    <div class="project-card">
-                        <div class="project-image"><i class="fas fa-tasks"></i></div>
-                        <div class="project-content">
-                            <h4>Task Management App</h4>
-                            <p>A React-based task manager with real-time updates and collaborative features.</p>
-                            <div><span class="tag">ReactJS</span><span class="tag">JavaScript</span><span class="tag">CSS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-up">
-                    <div class="project-card">
-                        <div class="project-image"><i class="fas fa-blog"></i></div>
-                        <div class="project-content">
-                            <h4>Blog CMS</h4>
-                            <p>Content management system with rich text editor and SEO optimization features.</p>
-                            <div><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <div class="proj-name">Nurjahan Store</div>
+            <div class="proj-status">Live</div>
+          </div>
+          <div class="proj-desc">A complete e-commerce platform with product, category, and inventory management, shopping cart, order processing, customer management, and payment integration, backed by REST API services.</div>
+          <div class="proj-stack"><span>React.js</span><span>Laravel</span><span>MySQL</span><span>REST API</span></div>
+          <div class="proj-links"><a href="#">Source ↗</a><a href="#">Live ↗</a></div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="text-white fs-5">Let's work together on your next project</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-card">
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
-                                <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email" required></div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Subject" required>
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                            <div class="text-center"><button type="submit" class="btn-submit">Send Message</button></div>
-                        </form>
-                        <div class="contact-info mt-5">
-                            <div class="row justify-content-center g-3">
-                                <div class="col-md-6"><div class="contact-item"><i class="fas fa-envelope"></i> shajibulhasan25@gmail.com</div></div>
-                                <div class="col-md-6"><div class="contact-item"><i class="fas fa-phone"></i> 01571-171044</div></div>
-                                <div class="col-md-6"><div class="contact-item"><i class="fas fa-map-marker-alt"></i> Chattogram, Bangladesh</div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1A2433"/>
+                <stop offset="100%" stop-color="#0B0F14"/>
+              </linearGradient>
+              <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" fill="none" stroke="#222C3B" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="200" fill="url(#g2)"/>
+            <rect width="400" height="200" fill="url(#grid2)"/>
+            <rect x="250" y="20" width="120" height="160" rx="14" fill="#161E2B" stroke="#222C3B"/>
+            <rect x="265" y="40" width="90" height="10" rx="3" fill="#5EEAD4" opacity="0.5"/>
+            <rect x="265" y="60" width="60" height="8" rx="3" fill="#8A97A8" opacity="0.5"/>
+            <rect x="265" y="130" width="90" height="34" rx="6" fill="#FF6B6B" opacity="0.25"/>
+            <g transform="translate(36,80)" font-family="JetBrains Mono, monospace" font-size="13" fill="#F5A623">
+              <text x="0" y="0">violation.report()</text>
+              <text x="0" y="22" fill="#8A97A8">→ fine.calculate()</text>
+              <text x="0" y="44" fill="#5EEAD4">→ status: "logged"</text>
+            </g>
+          </svg>
+          <span class="thumb-label">image placeholder — replace with screenshot</span>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/shajibulhasan" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/shajibulhasansoaib/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/ShajibulHasan.Official" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/shajibul.official.account/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="mt-4">&copy; 2026 Shajibul Hasan Soaib. All rights reserved.</p>
+        <div class="proj-body">
+          <div class="proj-top">
+            <div class="proj-name">Traffic Offense Management System</div>
+            <div class="proj-status">Live</div>
+          </div>
+          <div class="proj-desc">A web and mobile system for traffic violation reporting, fine management, offender record tracking, user authentication, and administrative monitoring, with a Flutter app connected via REST APIs.</div>
+          <div class="proj-stack"><span>Laravel Blade</span><span>REST API</span><span>Flutter</span></div>
+          <div class="proj-links"><a href="#">Source ↗</a><a href="#">Live ↗</a></div>
         </div>
-    </footer>
+      </div>
 
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1A2433"/>
+                <stop offset="100%" stop-color="#0B0F14"/>
+              </linearGradient>
+              <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" fill="none" stroke="#222C3B" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="200" fill="url(#g3)"/>
+            <rect width="400" height="200" fill="url(#grid3)"/>
+            <rect x="40" y="40" width="320" height="26" rx="6" fill="#161E2B" stroke="#222C3B"/>
+            <circle cx="56" cy="53" r="4" fill="#5EEAD4"/>
+            <rect x="70" y="48" width="60" height="10" rx="2" fill="#8A97A8" opacity="0.4"/>
+            <rect x="40" y="80" width="150" height="80" rx="8" fill="#161E2B" stroke="#222C3B"/>
+            <rect x="200" y="80" width="160" height="80" rx="8" fill="#161E2B" stroke="#222C3B"/>
+            <text x="60" y="115" font-family="JetBrains Mono, monospace" font-size="12" fill="#F5A623">Services</text>
+            <text x="220" y="115" font-family="JetBrains Mono, monospace" font-size="12" fill="#5EEAD4">Contact</text>
+          </svg>
+          <span class="thumb-label">image placeholder — replace with screenshot</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top">
+            <div class="proj-name">Millennium Solution — Corporate Site</div>
+            <div class="proj-status">Live</div>
+          </div>
+          <div class="proj-desc">A modern, responsive corporate landing site showcasing company services and projects, focused on clean UI/UX, smooth navigation, and performance across all devices.</div>
+          <div class="proj-stack"><span>React.js</span><span>CSS3</span><span>EmailJS</span></div>
+          <div class="proj-links"><a href="#">Source ↗</a><a href="#">Live ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-tag">05</span><span class="sec-title">education<span class="punc">.yml</span></span></div>
+    <div class="edu-card reveal">
+      <div>
+        <h3>Premier University, Chittagong</h3>
+        <p>Bachelor of Science in Computer Science and Engineering — Bangladesh</p>
+      </div>
+      <div class="edu-date">2021 — 2025</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <h2>// let's build something</h2>
+      <p>Open to freelance work, full-time roles, and collaboration on web & mobile projects.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:shajibulhasan.ms@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="tel:01571171044">Call: 01571-171044</a>
+        <a class="btn btn-ghost" href="#">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="#">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Shajibul Hasan Soaib — built with React in spirit, plain HTML in practice.</div>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
